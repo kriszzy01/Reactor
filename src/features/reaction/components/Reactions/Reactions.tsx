@@ -33,8 +33,12 @@ const Reactions = () => {
             {status === "reacting" && !reaction.description && (
               <Reaction
                 onReact={(payload) => {
-                  handleUpdateReaction(id, payload);
-                  handleStatus("completed");
+                  if (payload.emoji) {
+                    handleUpdateReaction(id, payload);
+                    handleStatus("completed");
+                  } else {
+                    alert("You must add an emoji");
+                  }
                 }}
               />
             )}
