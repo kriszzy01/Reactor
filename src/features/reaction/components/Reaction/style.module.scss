@@ -1,0 +1,36 @@
+.reaction {
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__field {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid grey;
+    color: #fff;
+  }
+
+  &__button {
+    width: fit-content;
+    font-size: 1rem;
+  }
+
+  &__emoji {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+  }
+
+  &__action {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
